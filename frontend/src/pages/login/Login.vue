@@ -9,7 +9,7 @@
 
           <section class="form">
 
-            <form>
+            <form method="POST" action="/auth">
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@email.com" required>
@@ -24,7 +24,7 @@
                 <label class="form-check-label" for="exampleCheck1">Permanecer conectado</label>
               </div>
               <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-outline-light btn-block">Login</button>
+                <button type="submit" class="btn btn-outline-light btn-block" @click.prevent="login">Login</button>
               </div>
             </form>
 
@@ -36,7 +36,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'Login',
+  methods: {
+    login: function () {
+      this.$router.push({name: 'home'});
+    }
+  },
+};
 </script>
 
 <style lang="scss" src="./login.scss" scoped />
