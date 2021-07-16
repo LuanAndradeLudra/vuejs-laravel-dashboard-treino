@@ -13,8 +13,6 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  padding: 32px;
-}
+<style scoped>
+
 </style>
