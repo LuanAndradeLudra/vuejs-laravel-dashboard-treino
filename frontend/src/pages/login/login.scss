@@ -1,7 +1,39 @@
-.info {
+@import "@/assets/scss/_main";
 
-    h1 {
-    color: red;
-    }
-    
+@media (max-width: 1920px) {
+  .content-login {
+    width: 30vw;
+  }
 }
+
+@media (max-width: 576px) {
+  .content-login {
+    width: 80vw;
+  }
+}
+
+.login {
+  background-color: $grayLow;
+  color: $white;
+
+  .content-login {
+    height: 70vh;
+    background-color: $purple;
+    border-radius: 15px;
+    border: 6px solid $purpleAdjacent;
+
+    header {
+      font-family: Roboto Condenser;
+      color: $white;
+      width: 100%;
+      padding-left: 24px;
+      padding-bottom: 16px;
+    }
+
+    .form{
+        width: 80%;
+    }
+
+  }
+}
+

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100;300&family=Zen+Loop&display=swap');
+
+@import "./colors";
+@import "./reset-bootstrap";
+
+html, background {
+  height: 100%;
+}
+
+.full-size{
+    width: 100vw;
+    height: 100vh;
+}
+
+.text-white{
+    color: $white;
+}
+
+.text-gray-low{
+    color: $grayLow;
+}
+
+.text-gray-medium{
+    color: $grayMedium;
+}
+
+.text-purple{
+    color: $purple;
+}
+
+.text-purpleAdjacent{
+    color: $purpleAdjacent;
+}
