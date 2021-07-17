@@ -1,0 +1,29 @@
+@import "@/assets/scss/_main";
+
+.content-right{
+    padding-left: 20vw;
+    background-color: red;//toRemove
+    height: 100vh; //toRemove
+
+    .navbartop{
+        width: 100%;
+        height: 7vh;
+        background-color: $blackLow;
+    }
+    
+    .section-dashboard{
+        width: 100%;
+        height: auto;
+        background-color: yellow;//toRemove
+    }
+    
+}
+
+.sidebar{
+    width: 20vw;
+    height: 100vh;
+    background-color: $blackLow;
+    position: fixed;
+    border-right: 5px $purpleAdjacent solid;
+}
+

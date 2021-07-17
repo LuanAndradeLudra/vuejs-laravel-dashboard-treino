@@ -1,13 +1,17 @@
 <template>
-    <p>Home</p>
+  <div>
+    <Dashboard />
+  </div>
 </template>
 
 <script>
-export default {
+import Dashboard from "../dashboard/Dashboard";
 
-}
+export default {
+  components: {
+    Dashboard,
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style  lang="scss" src="./home.scss" scoped />
