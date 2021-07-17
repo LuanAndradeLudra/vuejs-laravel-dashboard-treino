@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100;300&family=Zen+Loop&display=swap");
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
 @import "./colors";
 @import "./reset-bootstrap";
@@ -21,6 +20,14 @@ background {
   color: $grayMedium;
 }
 
+.text-black-low {
+  color: $blackLow;
+}
+
+.text-black-strong {
+  color: $black;
+}
+
 .text-purple {
   color: $purple;
 }
@@ -31,4 +38,16 @@ background {
 
 .mr-2{
   margin-right: 12px;
+}
+
+.ml-2{
+  margin-left: 12px;
+}
+
+.mr-1{
+  margin-right: 6px;
+}
+
+.ml-1{
+  margin-left: 6px;
 }

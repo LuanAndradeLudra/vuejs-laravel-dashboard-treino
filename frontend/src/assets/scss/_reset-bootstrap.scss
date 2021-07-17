@@ -1,8 +1,8 @@
 @import "./colors";
 
 .form-check-input:checked {
-  background-color: $purpleAdjacent;
-  border-color: $purpleAdjacent;
+  background-color: $blackLow;
+  border-color: $black;
   box-shadow: 0px 0px 0px 1px $grayLow !important;
 }
 
@@ -16,5 +16,6 @@
 }
 
 .form-control:focus {
-  border-color: none;
+  border-color: white;
+  box-shadow: 0px 0px 10px 1px white !important;
 }

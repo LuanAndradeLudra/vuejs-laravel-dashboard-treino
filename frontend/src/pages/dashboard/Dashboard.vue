@@ -1,14 +1,12 @@
 <template>
-  <div class="">
+  <div>
     <div class="sidebar">
       <Sidebar />
     </div>
 
     <div class="content-right">
 
-      <div class="navbartop">
         <Navbartop />
-      </div>
 
       <div class="section-dashboard">
         Section
@@ -19,8 +17,8 @@
 </template>
 
 <script>
-import Navbartop from './partials/navbartop'
-import Sidebar from './partials/sidebar'
+import Navbartop from './components/navbartop'
+import Sidebar from './components/sidebar'
 
 export default {
   name: "Dashboard",

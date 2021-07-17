@@ -1,9 +1,10 @@
 <template>
-  <p>Navbar</p>
+  <p>Sidebar</p>
 </template>
 
 <script>
 export default {
+  name: 'Sidebar',
 
 }
 </script>
