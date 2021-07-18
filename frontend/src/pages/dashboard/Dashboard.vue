@@ -1,15 +1,12 @@
 <template>
-  <div>
-    <div class="sidebar">
-      <Sidebar />
-    </div>
+  <div class="d-flex">
+      <Sidebar :page="page"/>
 
     <div class="content-right">
+         <Navbartop /> 
 
-        <Navbartop />
-
-      <div class="section-dashboard">
-        Section
+     <div class="section-dashboard">
+        <slot name="slot-section-dashboard"></slot>
       </div>
 
     </div>
@@ -22,6 +19,9 @@ import Sidebar from './components/sidebar'
 
 export default {
   name: "Dashboard",
+  props: {
+    page: String,
+  },
   components: {
     Navbartop,
     Sidebar

@@ -1,7 +1,7 @@
 <template>
-    <Dashboard page="home">
+    <Dashboard  page="products">
       <div slot="slot-section-dashboard">
-        Inicio
+        Produtos
       </div>
     </Dashboard>
 </template>
@@ -10,11 +10,11 @@
 import Dashboard from "../dashboard/Dashboard";
 
 export default {
-  name: 'Home',
-  components: {
-    Dashboard,
-  },
+   name: "Products",
+   components: {
+     Dashboard,
+   },
 };
 </script>
 
-<style  lang="scss" src="./home.scss" scoped />
+<style  lang="scss" scoped />

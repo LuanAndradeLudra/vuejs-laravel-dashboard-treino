@@ -3,11 +3,6 @@
 @import "./colors";
 @import "./reset-bootstrap";
 
-html,
-background {
-  height: 100%;
-}
-
 .text-white {
   color: $white;
 }
@@ -24,8 +19,12 @@ background {
   color: $blackLow;
 }
 
+.text-black-low-important {
+  color: $blackLow !important;
+}
+
 .text-black-strong {
-  color: $black;
+  color: $blackStrong;
 }
 
 .text-purple {
@@ -50,4 +49,24 @@ background {
 
 .ml-1{
   margin-left: 6px;
+}
+
+.full-width-pc{
+  width: 100%;
+}
+
+.full-width-vw{
+  width: 100vw;
+}
+
+.full-height-pc{
+  height: 100%;
+}
+
+.full-height-vh{
+  height: 100vh;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
