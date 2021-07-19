@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar shadow navbar-expand-lg navbar-light">
   <div class="container-fluid" style="padding: 0px !important; ">
     
-    <a class="navbar-brand ml-2" style="cursor: pointer" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+    <a class="navbar-brand ml-2 cursor-pointer" data-bs-toggle="collapse" data-bs-target="#sidebar">
       <i class="fas fa-bars"></i>
     </a>
 
@@ -11,17 +11,21 @@
     </a>
 
     <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-link">
-        <li class="nav-item hover-to-gray-medium">
-          <a class="d-none d-md-inline-flex nav-link active" aria-current="page" href="#">Home</a>
+        <li class="nav-item hover-to-black-medium">
+          <router-link :to="{name: 'home'}" class="d-none d-md-inline-flex nav-link">
+            Home
+          </router-link>
+        </li>
+        <li class="nav-item hover-to-black-medium">
+          <router-link :to="{name: 'products'}" class="d-none d-md-inline-flex nav-link">
+            Produtos
+          </router-link>
         </li>
     </ul>
           <li class="dropstart d-flex nav-link">
-          <a class="nav-item hover-to-gray-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="dropdown-toggle "><i class="fas fa-cogs mr-1"></i></span>
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item d-flex justify-content-between align-items-center" href="#" @click.prevent="logout">Sair <i class="fas fa-sign-out-alt"></i></a></li>
-          </ul>
+            <a class="nav-item hover-to-gray-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="collapse" data-bs-target="#configbar">
+              <span class="dropdown-toggle "><i class="fas fa-cogs mr-1"></i></span>
+            </a>
         </li>
     </div>
 </nav>
@@ -39,4 +43,28 @@ export default {
 }
 </script>
 
-<style lang="scss" src="../dashboard.scss" scoped />
+<style lang="scss" scoped>
+@import "@/assets/scss/_main";
+
+  .navbar {
+    background-color: $white;
+    padding: 0px;
+
+    .nav-item {
+      color: $purple !important;
+      text-decoration: none;
+    }
+
+    @media (max-width: 1920px) {
+      .img-logo {
+        height: 5vh;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .img-logo {
+        height: 5vh;
+      }
+    }
+  }
+</style>
