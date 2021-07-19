@@ -5,8 +5,8 @@
         <h3>{{quantity}}</h3>
         <p>{{name}}</p>
       </div>
-      <div class="card-info-icon d-none d-md-block">
-        <i :class="['asd', icon]"></i> 
+      <div class="card-info-icon">
+        <i :class="['d-none d-lg-block', icon]"></i> 
       </div>
     </div>
     <router-link :to="{name: route}" class="text-decoration-none text-white">

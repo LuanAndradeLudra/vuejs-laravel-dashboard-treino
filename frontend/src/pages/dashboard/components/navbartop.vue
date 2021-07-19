@@ -10,14 +10,14 @@
       <img src="https://punchcard.io/wp-content/uploads/2016/02/icon-angular.svg" class="img-logo">
     </a>
 
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-link">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-link d-flex flex-row">
         <li class="nav-item hover-to-black-medium">
-          <router-link :to="{name: 'home'}" class="d-none d-md-inline-flex nav-link">
+          <router-link :to="{name: 'home'}" class="d-none d-md-flex nav-link">
             Home
           </router-link>
         </li>
         <li class="nav-item hover-to-black-medium">
-          <router-link :to="{name: 'products'}" class="d-none d-md-inline-flex nav-link">
+          <router-link :to="{name: 'products'}" class="d-none d-md-flex nav-link">
             Produtos
           </router-link>
         </li>
@@ -51,8 +51,10 @@ export default {
     padding: 0px;
 
     .nav-item {
-      color: $purple !important;
+      color: $blackLow;
       text-decoration: none;
+      margin-left: 6px;
+      margin-right: 6px;
     }
 
     @media (max-width: 1920px) {
