@@ -1,10 +1,10 @@
 <template>
   <div class="d-flex">
-    <Sidebar :page="page" />
+    <Sidebar :page="page"/>
 
     <div class="content-right">
       <ConfigBar />
-      <Navbartop />
+      <Navbartop :page="page"/>
       <div class="section-dashboard">
         <slot name="slot-section-dashboard"></slot>
       </div>
@@ -38,11 +38,13 @@ export default {
 
 .content-right {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background-color: $grayLow;
   .section-dashboard {
     padding: 16px 16px 6px 16px;
     height: auto;
   }
 }
+
 </style>
